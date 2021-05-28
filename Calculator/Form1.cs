@@ -35,14 +35,14 @@ namespace Calculator
 
             PerformedOp = false;
             Button button = (Button)sender;
-            if(button.Text == ".")
+            if (button.Text == ".")
             {
-                if(!textBox_Result.Text.Contains("."))
+                if (!textBox_Result.Text.Contains("."))
                     textBox_Result.Text += button.Text;
             }
 
             else
-            textBox_Result.Text += button.Text;
+                textBox_Result.Text += button.Text;
         }
 
         private void label1_Click(object sender, EventArgs e)
